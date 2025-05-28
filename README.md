@@ -1,2 +1,3 @@
-# interview_prep
-practicing coding interview concepts
+# Coding Habits
+
+Building habits around learning languages and coding concepts
