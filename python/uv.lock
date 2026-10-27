@@ -1,0 +1,44 @@
+version = 1
+revision = 5
+requires-python = ">=3.12"
+
+[[package]]
+name = "dsa-python"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "memory-profiler" },
+    { name = "psutil" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "memory-profiler", specifier = "==0.61.0" },
+    { name = "psutil", specifier = "==5.9.4" },
+]
+
+[[package]]
+name = "memory-profiler"
+version = "0.61.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "psutil" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/b2/88/e1907e1ca3488f2d9507ca8b0ae1add7b1cd5d3ca2bc8e5b329382ea2c7b/memory_profiler-0.61.0.tar.gz", hash = "sha256:4e5b73d7864a1d1292fb76a03e82a3e78ef934d06828a698d9dada76da2067b0", size = 35935, upload-time = "2022-11-15T17:57:28.994Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/49/26/aaca612a0634ceede20682e692a6c55e35a94c21ba36b807cc40fe910ae1/memory_profiler-0.61.0-py3-none-any.whl", hash = "sha256:400348e61031e3942ad4d4109d18753b2fb08c2f6fb8290671c5513a34182d84", size = 31803, upload-time = "2022-11-15T17:57:27.031Z" },
+]
+
+[[package]]
+name = "psutil"
+version = "5.9.4"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/3d/7d/d05864a69e452f003c0d77e728e155a89a2a26b09e64860ddd70ad64fb26/psutil-5.9.4.tar.gz", hash = "sha256:3d7f9739eb435d4b1338944abe23f49584bde5395f27487d2ee25ad9a8774a62", size = 485825, upload-time = "2022-11-07T19:53:36.245Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a5/73/35cea01aad1baf901c915dc95ea33a2f271c8ff8cf2f1c73b7f591f1bdf1/psutil-5.9.4-cp36-abi3-macosx_10_9_x86_64.whl", hash = "sha256:54d5b184728298f2ca8567bf83c422b706200bcbbfafdc06718264f9393cfeb7", size = 243468, upload-time = "2022-11-07T18:45:00.474Z" },
+    { url = "https://files.pythonhosted.org/packages/5a/37/ef88eed265d93bc28c681316f68762c5e04167519e5627a0187c8878b409/psutil-5.9.4-cp36-abi3-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:16653106f3b59386ffe10e0bad3bb6299e169d5327d3f187614b1cb8f24cf2e1", size = 277515, upload-time = "2022-11-07T18:45:05.428Z" },
+    { url = "https://files.pythonhosted.org/packages/6e/c8/784968329c1c67c28cce91991ef9af8a8913aa5a3399a6a8954b1380572f/psutil-5.9.4-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:54c0d3d8e0078b7666984e11b12b88af2db11d11249a8ac8920dd5ef68a66e08", size = 280218, upload-time = "2022-11-07T18:45:11.831Z" },
+    { url = "https://files.pythonhosted.org/packages/3e/af/fe14b984e8b0f778d502d387b789d846cb2fcc3989f63be942741266d8c8/psutil-5.9.4-cp36-abi3-win32.whl", hash = "sha256:149555f59a69b33f056ba1c4eb22bb7bf24332ce631c44a319cec09f876aaeff", size = 247217, upload-time = "2022-11-08T11:50:03.989Z" },
+    { url = "https://files.pythonhosted.org/packages/25/6e/ba97809175c90cbdcd33b470e466ebf0854d15d1506e605cc0ddd284d5b6/psutil-5.9.4-cp36-abi3-win_amd64.whl", hash = "sha256:fd8522436a6ada7b4aad6638662966de0d61d241cb821239b2ae7013d41a43d4", size = 252462, upload-time = "2022-11-08T11:50:07.829Z" },
+    { url = "https://files.pythonhosted.org/packages/79/26/f026804298b933b11640cc2d15155a545805df732e5ead3a2ad7cf45a38b/psutil-5.9.4-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:6001c809253a29599bc0dfd5179d9f8a5779f9dffea1da0f13c53ee568115e1e", size = 244234, upload-time = "2022-11-07T19:53:20.872Z" },
+]
