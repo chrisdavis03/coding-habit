@@ -1,3 +1,6 @@
+from re import L
+
+
 def sliding_window(nums):
     left = 0
     for right in range(len(nums)):
@@ -7,9 +10,10 @@ def sliding_window(nums):
         while condition_broken():
             # remove nums[left]
             left += 1
-        
         # process current valid window
         # update result (max/min/length)
+
+
 
 def longest_substring_without_repeats(s):
     left = 0

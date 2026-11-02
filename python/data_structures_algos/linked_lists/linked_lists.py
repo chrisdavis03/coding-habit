@@ -33,12 +33,13 @@ class LinkedList:
         current = self.head
         while current.next != None:
             current = current.next
-        current.next = new_node
+        current.next = new_node 
 
-    def length(self):
+    def length(self) -> int:
+        #todo - a cycle will create an infinite loop. 
         current = self.head
         total = 0
-        while current != None:
+        while current.next != None:
             total += 1
             current = current.next
         return total
@@ -60,7 +61,7 @@ class LinkedList:
         while True: 
             cur_node = cur_node.next
             if cur_idx == index:
-                return cur_node.data
+                return cur_node
             cur_idx += 1
     def erase(self, index):
         if index>=self.length():
@@ -77,17 +78,16 @@ class LinkedList:
             cur_idx += 1
 
 
+if __name__ == '__main__': 
+    my_list = LinkedList()
 
-my_list = LinkedList()
+    my_list.append(0)
+    my_list.append(1)
+    my_list.append(2)
+    my_list.append(3)
+    my_list.append(4)
 
-my_list.append(0)
-my_list.append(1)
-my_list.append(2)
-my_list.append(3)
-my_list.append(4)
+    my_list.display()
 
-my_list.display()
-
-my_list.erase(1)
-
-my_list.display()
+    my_list.erase(1)
+    my_list.display()
