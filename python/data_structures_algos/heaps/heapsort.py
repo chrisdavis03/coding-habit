@@ -1,6 +1,11 @@
 import heapq as hq
 
 def heapsort(n:list[int]):
+    '''
+    Create heap, heapify array, then repeated pop from head to create sorted list. 
+    Min-Heap == ascending order
+    Max-Heap == descending order
+    '''
     #initialize heaps
     minheap = n.copy() 
     maxheap = n.copy()
