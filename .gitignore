@@ -56,5 +56,10 @@ docs/_build/
 
 #virtual environment
 /venv/
+/.venv/
 
 /data/
+
+# exercise file
+scratchpad.py
+scratchpad.js
